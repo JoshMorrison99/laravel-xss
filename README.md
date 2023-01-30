@@ -36,7 +36,7 @@ class SearchController extends Controller
 ```
 
 
-**Vulnerability 1) echo/print**
+**Vulnerability 1) echo**<br/>
 The example above uses the blade templating engine to render the user's input on the screen. The blade templating engine will automatically escape any HTML characters. Using the `echo` command to render user input can result in XSS as the input will not be escaped.
 
 *Controller*
@@ -65,7 +65,7 @@ class SearchController extends Controller
 }
 ```
 
-**Vulnerability 2) href**
+**Vulnerability 2) href**<br/>
 Inserting user input into an `href` tag will result in XSS.
 
 *View*
